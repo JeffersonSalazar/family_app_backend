@@ -228,7 +228,7 @@ router.post('/signin', async (req, res) => {
 
 
 //borrar esto es solo prueba
-app.router('/data', (req, res) => {
+router.get('/data', (req, res) => {
     res.send('hola desde node')
 });
 
