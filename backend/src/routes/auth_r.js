@@ -226,5 +226,12 @@ router.post('/signin', async (req, res) => {
 });
 
 
+
+//borrar esto es solo prueba
+app.router('/data', (req, res) => {
+    res.send('hola desde node')
+});
+
+
 // export file (auth_r)
 module.exports = router;
