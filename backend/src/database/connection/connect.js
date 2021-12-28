@@ -2,7 +2,9 @@
 let { connect } = require('mongoose');
 
 // url connection
-let urlApi = `mongodb+srv://${process.env.USER}:${process.env.PASS}@cluster0.ggild.mongodb.net/${process.env.DB}?retryWrites=true&w=majority`;
+let urlApi = process.env.URL_MONGO;
+
+console.log(typeof urlApi);
 
 // start connection
 const CONECTION = connect(urlApi, {
