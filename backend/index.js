@@ -12,7 +12,7 @@ let port = process.env.PORT || 3000;
 require('dotenv').config();
 
 // require file (auth_r)
-const AUTH_R = require('./routes/auth_r');
+const AUTH_R = require('./src/routes/auth_r');
 // const HANDLER_PASS = require('./routes/handler_password');
 
 // require (morgan - cors)

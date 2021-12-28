@@ -4,8 +4,6 @@ let { connect } = require('mongoose');
 // url connection
 let urlApi = process.env.URL_MONGO;
 
-console.log(typeof urlApi);
-
 // start connection
 const CONECTION = connect(urlApi, {
 
