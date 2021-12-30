@@ -225,12 +225,12 @@ router.post('/signin', async (req, res) => {
 
 });
 
+router.get('/users', async (req, res) => {
+     
+    const USERS_DB = await AUTH_S.find();
 
-
-//borrar esto es solo prueba
-router.get('/data', (req, res) => {
-    res.send('hola desde node')
-});
+    res.json(USERS_DB);
+})
 
 
 // export file (auth_r)
